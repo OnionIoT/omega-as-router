@@ -1,0 +1,28 @@
+
+config wifi-device 'ra0'
+	option type 'ralink'
+	option mode '9'
+	option channel 'auto'
+	option txpower '100'
+	option ht '20'
+	option country 'US'
+	option disabled '0'
+
+config wifi-iface
+	option device 'ra0'
+	option network 'wlan'
+	option mode 'ap'
+	option ApCliAuthMode 'WPA2PSK'
+	option ApCliEncrypType 'AES'
+	option ApCliSsid 'somewifissid'
+	option ApCliPassWord 'somepassword'
+	option encryption 'WPA2PSK'
+	option ssid 'OmegaRouter'
+	option key 'RouterPassword'
+	option ApCliEnable '0'
+
+config wifi-config
+	option ssid 'somewifissid'
+	option encryption 'WPA2PSK'
+	option key 'somepassword'
+
